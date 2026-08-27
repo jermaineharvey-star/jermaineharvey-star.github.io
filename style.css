@@ -5,9 +5,16 @@
 body {
   margin: 0;
   background: #f2b949;
-  color: #FFFF00;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #fff;
+  font-family: "Helvetica Neue", Arial, sans-serif; }
+
+  body {
+  background-image: url(https://preview.colorkit.co/gradient/ff7e26-ff9c59-fff4d6.png?size=pinterest&scale=0.25&static=true);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
 
 #all-contents {
   max-width: 1500px;
@@ -47,7 +54,7 @@ h2 {
   color: #FDFBD4;
 }
 
-.content > p {
+.content  p {
   margin: 0;
   color: #fff;
   font-size: 0.9rem;
@@ -129,7 +136,7 @@ nav {
   padding: 16px 24px;
   background: #fff;
   border: 1px solid #e0e0e0;
-  border-radius: 12px;
+  border-radius: 40px;
 }
 
 nav h1 {
@@ -170,10 +177,9 @@ nav h1 {
 /* Portfolio styles */
 .content h1 {
   color: rgb(255, 255, 255);
-.
+ 
 }
-
-.content h3 {color:#fff }
+.content h3{color:#fff}
 
 #portfolio {
   list-style: none;
@@ -222,3 +228,121 @@ nav h1 {
 #portfolio a:hover::after {
   opacity: 1;
 }
+
+
+/* responsive web design */
+@media screen and (min-width: 120px) and (max-width: 1080px) {
+  main {
+    height: 100ch;
+    zoom: 1.5;
+    display: grid;
+  }
+
+  h1 {
+    font-size: 44px;
+  }
+
+  h2 {
+    font-size: 42px;
+  }
+
+  h3 {
+    font-size: 36px;
+  }
+
+  #all-contents {
+    height: 100ch;
+    margin: none;
+  }
+
+  a {
+    font-size: 42px;
+  }
+
+  .sidebar {
+    margin-right: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sidebar-img {
+    width: 100%;
+  }
+
+  p,
+  li {
+    font-size: 24px;
+  }
+
+  .content {
+    align-content: center;
+    justify-content: center;
+  }
+}
+
+/* Third-Page styles */
+.butter {
+  color: #fff; }
+
+  .butter h3{color:#fff}
+ 
+#nav-hi {
+  color:#f2b949;
+  list-style: none;
+  display: flex;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bi a {
+  color: #f2b949;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 8px;
+  transition:
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+nav-bi a:hover {
+  background: #ddd;
+  color: #f2b949;
+}
+
+#gerald  {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px; }
+
+  #gerald li {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+#gerald a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: #f2b949;
+  padding: 16px 20px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
+}
+
+
+
+
+
+
