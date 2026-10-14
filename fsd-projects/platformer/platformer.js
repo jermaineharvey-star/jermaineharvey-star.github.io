@@ -32,11 +32,13 @@ $(function () {
 
     // TODO 2 - Create Platforms
     createPlatform(1350, 400, 50, 50, "red");
-    createPlatform(200, 625, 175, 10, "blue");
-    createPlatform(400, 500, 175, 10, "blue");
-    createPlatform(600, 370, 200, 10, "blue");
-    createPlatform(900, 500, 175, 10, "blue");
-    createPlatform(1125, 625, 175, 10, "blue");
+    createPlatform(200, 625, 175, 10, "#B7410E");
+    createPlatform(400, 500, 175, 10, "#B7410E");
+    createPlatform(600, 370, 200, 10, "#B7410E");
+    createPlatform(900, 500, 175, 10, "#B7410E");
+    createPlatform(1125, 625, 175, 10, "#B7410E");
+    createBadPlatform(600, 625, 175, 10, "#420c09");
+    createPlatform(1300, 0, 10, 150, "#B7410E", 1300, 1300,100, 0,700, 20);
 
 
 
@@ -44,6 +46,8 @@ $(function () {
      createCollectable("steve", 1300,400);
      createCollectable("diamond", 700, 170, 0.5, 0.7);
      createCollectable("database", 500, 466,)
+     createCollectable("grace",990,460, 0, 0, 900, 1050, 5);
+     
 
 
     
@@ -51,6 +55,11 @@ $(function () {
     createCannon("top", 200, 750)
     createCannon("left", 300, 750)
     createCannon("right", 500, 750)
+    createCannon("bottom", 200, 2000, 20, 10, 15, 700, 2)
+
+
+    // TODO 5 - Create Projectiles
+     createProjectile("bottom", 700, 750, 5, 100)
 
     
     

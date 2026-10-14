@@ -1,17 +1,18 @@
-body {
+  aqqbody {
   margin: 0px;
   background-color: #202737;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTOGtUKLa-VcTlQj7sguLsNbUbZ8d0TxYlakKSH0IYxxJ_tYE8nKKReoiu&s=10);
 }
 
 canvas {
-  background-color: lightblue;
+  
   margin: 20px;
   border-radius: 15px;
-  border: 5px solid rgba(118, 0, 233, 0.375);
+  border: 5px solid rgb(248, 248, 248);
 }
 
 img {

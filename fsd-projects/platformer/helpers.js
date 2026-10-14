@@ -388,24 +388,25 @@ function badPlatformCollision() {
 }
 
 function deathOfPlayer() {
-  ctx.fillStyle = "grey";
+  ctx.fillStyle = "black";
   ctx.fillRect(
     canvas.width / 4,
     canvas.height / 6,
     canvas.width / 2,
     canvas.height / 2
+    
   );
-  ctx.fillStyle = "black";
+  ctx.fillStyle = "red";
   ctx.font = "800% serif";
   ctx.fillText(
-    "You are dead",
+    "Wasted!",
     canvas.width / 4,
     canvas.height / 6 + canvas.height / 5,
     (canvas.width / 16) * 14
   );
-  ctx.font = "500% serif";
+  ctx.font = "390% serif";
   ctx.fillText(
-    "Hit any key to restart",
+    "Press an button to try again.",
     canvas.width / 4,
     canvas.height / 6 + canvas.height / 3,
     (canvas.width / 16) * 14
@@ -674,24 +675,24 @@ function checkForWin() {
 
 function winGame() {
   // If we reach this point, all collectables are collected
-  ctx.fillStyle = "grey";
+  ctx.fillStyle = "black";
   ctx.fillRect(
     canvas.width / 4,
     canvas.height / 6,
     canvas.width / 2,
     canvas.height / 2
   );
-  ctx.fillStyle = "white";
+  ctx.fillStyle = "red";
   ctx.font = "800% serif";
   ctx.fillText(
-    "You Win!",
+    "Well Done!",
     canvas.width / 4,
     canvas.height / 6 + canvas.height / 5,
     (canvas.width / 16) * 14
   );
   ctx.font = "500% serif";
   ctx.fillText(
-    "Hit any key to restart",
+    "Click an Button to restart.",
     canvas.width / 4,
     canvas.height / 6 + canvas.height / 3,
     (canvas.width / 16) * 14
